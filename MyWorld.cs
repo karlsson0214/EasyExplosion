@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using EasyMonoGame;
 
-namespace EasyStart
+namespace EasyExplosion
 {
     internal class MyWorld : World
     {
-        public MyWorld() : base(600, 800)
+        public MyWorld() : base(800, 800)
         {
             // Tile background with the file "bluerock" in the Content folder.
             BackgroundTileName = "bluerock";
+
+            Add(new Bee(), "bee", 200, 200);
         }  
     }
 }
